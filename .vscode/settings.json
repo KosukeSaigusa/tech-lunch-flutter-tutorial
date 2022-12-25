@@ -6,5 +6,6 @@
   "files.watcherExclude": {
     "**/.fvm": true
   },
-  "dart.runPubGetOnPubspecChanges": "never"
+  "dart.runPubGetOnPubspecChanges": "never",
+  "dart.lineLength": 80
 }

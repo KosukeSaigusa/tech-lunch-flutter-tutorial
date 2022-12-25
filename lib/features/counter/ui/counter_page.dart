@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../github/ui/search_repos_page.dart';
+
 class CounterPage extends StatefulWidget {
   const CounterPage({super.key, required this.title});
 
@@ -30,6 +32,15 @@ class _CounterPageState extends State<CounterPage> {
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
+            ),
+            ElevatedButton(
+              onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const SearchReposPage(),
+                ),
+              ),
+              child: const Text('リポジトリ検索ページへ'),
             ),
           ],
         ),
